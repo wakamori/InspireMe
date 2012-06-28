@@ -1,0 +1,65 @@
+@border-shadow: 1px solid #aaa;
+@border-hilgiht: 1px solid #fff;
+@viewer-width: 600px;
+
+body {
+	padding: 0px;
+	background-color: #fcfcfc;
+}
+#main {
+	margin: 40px 0px 0px 0px !important;
+	padding: 0px;
+}
+
+#main .page-header {
+	padding: 10px;
+	margin: 0px;
+	border-bottom: @border-shadow;
+//	background-color: #efefef;
+//	background-color: #ddddef;
+	background-color: #eaeaea;
+}
+#main-container {
+	border-top: @border-hilgiht;
+}
+#viewer-container {
+	float: right;
+	width: @viewer-width + 1;
+	line-height: 0px;
+	border-left: @border-hilgiht;
+}
+#editor-container {
+	margin-right: @viewer-width + 2;
+	border-right: @border-shadow;
+}
+#editor-container form {
+	margin: 0px;
+}
+
+#viewer {
+	margin: 0px;
+	padding: 0px;
+	width: @viewer-width;
+	height: @viewer-width + 1;
+	border: none;
+	border-bottom: @border-shadow;
+}
+
+#console {
+	border-top: @border-hilgiht;
+	margin: 0px;
+	background-color: #f5f5f5;
+	min-height: 50px;
+}
+
+section {
+	padding-top: 0px !important;
+}
+div.CodeMirror {
+}
+#editor-section-tab {
+	padding-top: 5px;
+	margin-bottom: 0px !important;
+//	background-color: #efefef;
+}
+
