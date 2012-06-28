@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Inspire Me</title>
+	
+	<!-- ie8以下でdom認識しないhtml5 elementを認識するもの(表示はできません) -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/base.css" type="css" />
+</head>
+
+<body>
+	<div id="header" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+			<a class="brand" href="#">Inspire Me</a>
+			<!--
+			<div class="btn-group pull-right">
+				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+					<i class="icon-user"></i> Username
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Profile</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Sign Out</a></li>
+				</ul>
+			</div>
+			-->
+			
+			<ul class="nav pull-right">
+				<li><a href="#">Create Account</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="#">Sign In</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h2>既存のアカウントを使用する</h2>
+		<div style="padding: 30px;">
+		<div id="fb-root"></div>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+				appId      : 'YOUR_APP_ID',
+				status     : true, 
+				cookie     : true,
+				xfbml      : true,
+				oauth      : true,
+				});
+			};
+			(function(d){
+				var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+				js = d.createElement('script'); js.id = id; js.async = true;
+				js.src = "http://connect.facebook.net/en_US/all.js";
+				d.getElementsByTagName('head')[0].appendChild(js);
+			}(document));
+		</script>
+		<div class="fb-login-button">Facebookアカウントを利用して作成</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+	<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<!--
+	<script src="lib/bootstrap/js/bootstrap-dropdown.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-transition.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-alert.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-modal.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-scrollspy.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-tab.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-tooltip.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-popover.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-button.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-collapse.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-carousel.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-typeahead.js"></script>
+-->
+</body>
+</html>
