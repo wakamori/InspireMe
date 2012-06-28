@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Inspire Me</title>
+	
+	<!-- ie8以下でdom認識しないhtml5 elementを認識するもの(表示はできません) -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/base.css" type="css" />
+	<link rel="stylesheet" href="css/code-edit.css" type="css" />
+	<link rel="stylesheet" href="lib/CodeMirror/lib/codemirror.css" type="css" />
+	<link rel="stylesheet" href="lib/CodeMirror/theme/blackboard.css" type="css" />
+</head>
+
+<body>
+	<header id="header" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+			<a class="brand" href="#">Inspire Me</a>
+			<ul class="nav">
+				<li class="divider-vertical"></li>
+			</ul>
+			<!--
+			<div class="btn-group pull-right">
+				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+					<i class="icon-user"></i> Username
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Profile</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Sign Out</a></li>
+				</ul>
+			</div>
+			-->
+			
+			<ul class="nav pull-right">
+				<li><a href="#" class="">Start Coding</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="#">Create Account</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="#">Sign In</a></li>
+			</ul>
+			</div>
+		</div>
+	</header>
+	<div id="main">
+		<h1 class="page-header">Hello World!</h1>
+		<div id="main-container">
+		<div id="viewer-container">
+			<iframe id="viewer" src=""></iframe>
+			<div id="console"></div>
+		</div>
+		<div id="editor-container">
+<form method="post" action="">
+<fieldset>
+				<div class="tabbable">
+					<ul id="editor-section-tab" class="nav nav-tabs">
+						<li class="active"><a href="#konoha-section" data-toggle="konoha-section">Konoha</a></li>
+						<li class=""><a href="#test-section" data-toggle="test-section">Test</a></li>
+						<li class=""><a href="#html-section" data-toggle="html-section">HTML</a></li>
+						<li class=""><a href="#css-section" data-toggle="css-section">CSS</a></li>
+						<li class=""><a href="#file-section" data-toggle="file-section">File</a></li>
+					</ul>
+					<div class="tab-content">
+				<div id="konoha-section" class="tab-pane active">
+				<textarea id="konoha-code" name="konoha-code">
+int fib(int n) {
+	if (n &lt; 3) return 1;
+	else return fib(n-1) + fib(n-2);
+}
+print fib(10);
+</textarea>
+				</div>
+				<div id="html-section" class="tab-pane">
+				<textarea id="html-code" name="html-code">
+&lt;html style="color: green"&gt;
+  &lt;!-- this is a comment --&gt;
+  &lt;head&gt;
+    &lt;title&gt;HTML Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    The indentation tries to be &lt;em&gt;somewhat &amp;quot;do what
+    I mean&amp;quot;&lt;/em&gt;... but might not match your style.
+  &lt;/body&gt;
+&lt;/html&gt;
+</textarea>
+				</div>
+				<div id="css-section" class="tab-pane">
+				<textarea id="css-code" name="css-code">
+.CodeMirror-gutter {
+  position: absolute; left: 0; top: 0;
+  z-index: 10;
+  background-color: #f7f7f7;
+  border-right: 1px solid #eee;
+  min-width: 2em;
+  height: 100%;
+}
+.CodeMirror-gutter-text {
+  color: #aaa;
+  text-align: right;
+  padding: .4em .2em .4em .4em;
+  white-space: pre !important;
+}
+.CodeMirror-lines {
+  padding: .4em;
+  white-space: pre;
+}
+</textarea>
+				</div>
+					</div>
+				</div>
+</fieldset>
+</form>
+			</div>
+			</div>
+	</div>
+	<footer id="footer"></footer>
+	<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="lib/CodeMirror/lib/codemirror.js" type="text/javascript"></script>
+	<script src="lib/CodeMirror/mode/xml/xml.js" type="text/javascript"></script>
+	<script src="lib/CodeMirror/mode/css/css.js" type="text/javascript"></script>
+	<script src="lib/CodeMirror/mode/clike/clike.js" type="text/javascript"></script>
+	<script src="lib/bootstrap/js/bootstrap-tab.js"></script>
+	<script src="js/code-edit.js" type="text/javascript"></script>
+<!--
+	<script src="lib/bootstrap/js/bootstrap-dropdown.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-transition.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-alert.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-modal.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-scrollspy.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-tooltip.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-popover.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-button.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-collapse.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-carousel.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-typeahead.js"></script>
+-->
+</body>
+</html>

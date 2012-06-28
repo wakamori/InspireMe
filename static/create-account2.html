@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>Inspire Me</title>
+	
+	<!-- ie8以下でdom認識しないhtml5 elementを認識するもの(表示はできません) -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/base.css" type="css" />
+</head>
+
+<body>
+	<div id="header" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+			<a class="brand" href="#">Inspire Me</a>
+			<!--
+			<div class="btn-group pull-right">
+				<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+					<i class="icon-user"></i> Username
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Profile</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Sign Out</a></li>
+				</ul>
+			</div>
+			-->
+			
+			<ul class="nav pull-right">
+				<li><a href="#">Create Account</a></li>
+				<li class="divider-vertical"></li>
+				<li><a href="#">Sign In</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h1>新しくアカウントを作成する</h1>
+		<div class="row">
+		<div class="span12">
+		<form class="form-horizontal">
+			<fieldset>
+				<div class="control-group">
+					<label for="userName" class="control-label">ユーザ名</label>
+						<div class="controls">
+						<input type="text" id="userName" class="input-xlarge" name="userName" value="" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="userName" class="control-label">アイコン画像</label>
+					<div class="controls">
+						<input type="file" id="userName" class="input-xlarge" name="userName" value="" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="userName" class="control-label">URL</label>
+					<div class="controls">
+						<input type="text" id="userName" class="input-xlarge" name="userName" value="" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="bio" class="control-label">自己紹介</label>
+					<div class="controls">
+						<textarea class="span6" id="bio"></textarea>
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="userName" class="control-label">デフォルトライセンス</label>
+					<div class="controls">
+						<label class="radio" for="license">
+						<input type="radio" id="license" class="radio" name="license" value="" />
+						MIT License
+						</label>
+						<label class="radio" for="license">
+						<input type="radio" id="license" class="radio" name="license" value="" />
+						New BSD License
+						</label>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+	<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<!--
+	<script src="lib/bootstrap/js/bootstrap-dropdown.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-transition.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-alert.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-modal.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-scrollspy.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-tab.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-tooltip.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-popover.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-button.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-collapse.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-carousel.js"></script>
+	<script src="lib/bootstrap/js/bootstrap-typeahead.js"></script>
+-->
+</body>
+</html>
